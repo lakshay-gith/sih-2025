@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Signup.css";
+import logo from "../assets/Sih-logo.png"; 
+
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +22,6 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // If role is institute, validate institute code
     if (formData.role === "institute" && formData.instituteCode !== "12345") {
       alert("Invalid Institute Code. Please contact admin.");
       return;
@@ -33,24 +34,22 @@ const Signup = () => {
 
   return (
     <div className="auth-container">
-      <h1
-      style={{
+      <img
+  src={logo}
+  alt="ResQ360 Logo"
+  style={{
     position: "absolute",
-    top: "40px",
-    left: "10%",
+    top: "-20px",
+    left: "15%",
     transform: "translateX(-50%)",
-    fontFamily: "Poppins, sans-serif",
-    fontSize: "2.2rem",
-    fontWeight: "700",
-    letterSpacing: "2px",
-    color: "#e63946",
-    textShadow: "2px 2px 6px rgba(0,0,0,0.2)",
-    cursor: "default",
-    userSelect: "none",
+    height: "200px",
+    WebkitMaskImage: `url(${logo})`,
+    WebkitMaskRepeat: "no-repeat",
+    WebkitMaskSize: "contain",
   }}
->
-  ResQ<span style={{ color: "#0f2b5cff" }}>360</span>
-</h1>
+/>
+
+
       <form className="auth-form" onSubmit={handleSubmit}>
         <h2>Create Account</h2>
 
@@ -86,7 +85,6 @@ const Signup = () => {
           <option value="institute">Institute</option>
         </select>
 
-        {/* Show this only if Institute is selected */}
         {formData.role === "institute" && (
           <input
             type="text"

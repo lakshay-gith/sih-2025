@@ -1,4 +1,6 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
@@ -35,7 +37,9 @@ function App() {
         <Route path="/drill-checklist" element={<DrillChecklist />} />
         <Route path="/features-safety" element={<FeaturesAndSafety />} />
         <Route path="/inspection-rating" element={<InspectionRatings/>} />
+
       </Routes>
+        <ToastContainer />
     </Router>
   );
 }

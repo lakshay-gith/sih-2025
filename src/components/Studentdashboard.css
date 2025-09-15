@@ -1,18 +1,31 @@
 
  .student-container {
   min-height: 100vh;
-  /* background: linear-gradient(to right, #fdfbfb, #ebedee); */
   background: white;
   padding: 40px;
   font-family: "Poppins", sans-serif;
 } 
+.dashboard-logo {
+  height: 150px;
+  margin-right: 20px;
+  object-fit: contain;
+}
 
 .student-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 5px;
+  padding-right: 50px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10;
   margin-bottom: 40px;
+
 }
+
+
 
 .Student-Dashboard {
   font-family: 'Poppins', sans-serif;

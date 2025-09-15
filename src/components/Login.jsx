@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/Sih-logo.png"; 
 import "./Login.css";
 
 const Login = () => {
@@ -31,6 +32,20 @@ const Login = () => {
 
   return (
     <div className="auth-container">
+      <img
+        src={logo}
+        alt="ResQ360 Logo"
+        style={{
+          position: "absolute",
+          top: "-20px",
+          left: "15%",
+          transform: "translateX(-50%)",
+          height: "200px",
+          WebkitMaskImage: `url(${logo})`,
+          WebkitMaskRepeat: "no-repeat",
+          WebkitMaskSize: "contain",
+        }}
+      />
       <form className="auth-form" onSubmit={handleSubmit}>
         <h2>Login</h2>
         <input
