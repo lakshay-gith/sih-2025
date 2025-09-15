@@ -1,0 +1,54 @@
+.drill-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: left;
+}
+
+.drill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.drill-card h2 {
+  color: #2575fc;
+  margin-bottom: 12px;
+}
+
+.upload-section {
+  margin-bottom: 12px;
+}
+
+.upload-label {
+  display: block;
+  background: #2575fc;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  width: fit-content;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.checklist li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #444;
+}

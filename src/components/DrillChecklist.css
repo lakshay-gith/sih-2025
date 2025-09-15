@@ -1,0 +1,91 @@
+
+.drill-container {
+  padding: 40px;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.drill-container h1 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.drill-container p {
+  color: #555;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Stack cards vertically */
+.drill-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Drill Card Base */
+.drill-card {
+  width: 100%;
+  padding: 40px 50px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.drill-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.drill-card p {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.drill-card button {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.drill-card button:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
+
+
+/* 💫 Wave flash hover effect */
+.drill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  transition: all 0.6s ease;
+}
+
+.drill-card:hover::before {
+  left: 100%;
+}

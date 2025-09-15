@@ -1,0 +1,123 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  color: #222;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.logout-btn {
+  background: #e63946;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0px 4px 12px rgba(230, 57, 70, 0.4);
+}
+
+.logout-btn:hover {
+  background: #d62828;
+  transform: scale(1.05);
+}
+
+/* Stack cards vertically with spacing */
+.dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Card Base */
+.dashboard-card {
+  width: 85vw;
+  padding: 40px 50px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.dashboard-card p {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.dashboard-card button {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card button:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
+/* Different gradient backgrounds for each card */
+.features {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+.safety {
+  background: linear-gradient(135deg, #ff6b6b, #ff4757);
+}
+.drills {
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+}
+.planning {
+  background: linear-gradient(135deg, #ffa600, #ff7b00);
+}
+.inspection {
+  background: linear-gradient(135deg, #9b59b6, #6c3483);
+}
+
+/* 💫 Wave flash hover effect */
+.dashboard-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  transition: all 0.6s ease;
+}
+.dashboard-card:hover{
+  transform: translateY(-8px) ;
+  transform: scale(1.02) ;
+
+}
+
+.dashboard-card:hover::before {
+  left: 100%;
+}

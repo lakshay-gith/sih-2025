@@ -1,0 +1,51 @@
+.inspection-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: 600;
+  color: #1d3b58;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #cfd9e6;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid #2575fc;
+  box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.18);
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+}
+
+.submit-btn {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 117, 252, 0.25);
+}

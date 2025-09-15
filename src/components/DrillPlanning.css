@@ -1,0 +1,55 @@
+/* Root layout */
+.planning-root {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7f9fc, #eef4ff);
+  padding: 28px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #17324d;
+}
+
+/* Header */
+.planning-header {
+  margin-bottom: 18px;
+}
+.planning-header h1 {
+  margin: 0 0 6px 0;
+  font-size: 1.6rem;
+  color: #10243a;
+}
+.planning-header .sub {
+  margin: 0;
+  color: #4b6b82;
+  font-size: 0.95rem;
+}
+
+/* Body: left list + right detail */
+.planning-body {
+  display: flex;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+/* Left list */
+.planning-list {
+  width: 320px;
+  max-height: calc(100vh - 180px);
+  overflow: auto;
+  padding: 8px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(250,250,255,0.9));
+  box-shadow: 0 6px 22px rgba(12, 32, 54, 0.06);
+}
+
+/* Right detail: fills remaining */
+.planning-detail {
+  flex: 1;
+  max-height: calc(100vh - 180px);
+  overflow: auto;
+}
+
+/* Responsive: on small screens hide right panel and use modal */
+@media (max-width: 760px) {
+  .planning-body { flex-direction: column; }
+  .planning-list { width: 100%; max-height: none; }
+  .planning-detail { display: none; }
+}

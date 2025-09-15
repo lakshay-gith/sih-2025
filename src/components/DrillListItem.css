@@ -1,0 +1,34 @@
+.drill-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  background: transparent;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: background 0.18s, transform 0.12s;
+  cursor: pointer;
+}
+
+.drill-list-item:hover { transform: translateY(-3px); background: rgba(37,117,252,0.04); }
+.drill-list-item.active { background: linear-gradient(90deg,#eef6ff,#f5fbff); box-shadow: 0 6px 18px rgba(37,117,252,0.08); }
+
+.drill-list-item .left .icon {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius: 10px;
+  background: rgba(37,117,252,0.08);
+}
+
+.drill-list-item h3 { margin: 0; font-size: 1rem; color: #0f2b45; }
+.drill-list-item .summary { margin: 4px 0 6px 0; font-size: 0.88rem; color: #4b6b82; }
+.chip {
+  display:inline-block; padding:4px 8px; border-radius: 999px;
+  background: rgba(0,0,0,0.04); font-size: 0.75rem; color: #1c3f58;
+}
+.chev { font-size: 18px; color: #8da4b8; }

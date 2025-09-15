@@ -1,0 +1,57 @@
+.detail-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(12,32,54,0.06);
+  margin-bottom: 18px;
+}
+
+/* Header */
+.detail-header {
+  display:flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  border-bottom: 1px solid #eef3fa;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+}
+.title-block { display:flex; gap: 14px; align-items: center; }
+.big-icon {
+  font-size: 36px;
+  width:62px; height:62px; display:flex; align-items:center; justify-content:center;
+  border-radius:10px; background: linear-gradient(180deg, rgba(37,117,252,0.08), rgba(37,117,252,0.02));
+}
+.detail-header h2 { margin: 0; font-size: 1.2rem; color:#10243a; }
+.category { font-size: 0.85rem; color:#4b6b82; margin-top:6px; }
+
+/* Expected outcome panel */
+.expected { text-align: right; max-width: 40%; min-width: 180px; }
+.expected strong { display:block; color:#1b3550; }
+.outcome { margin:6px 0 0 0; font-size:0.92rem; color:#334e63; }
+
+/* Sections */
+.section h4 { margin: 0 0 8px 0; color:#0f3b5d; font-size: 1rem; }
+.how { margin: 0 0 6px 0; color:#314f63; line-height:1.45; }
+
+/* Timeline style for steps */
+.timeline { list-style: none; margin: 0; padding: 0 0 0 8px; border-left: 2px dashed rgba(37,117,252,0.12); }
+.timeline li { display:flex; gap:12px; align-items:flex-start; margin-bottom:16px; padding-left: 12px; position: relative; }
+.step-index {
+  width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  background: #f0f7ff; color:#105db2; font-weight:700; box-shadow: 0 4px 10px rgba(10,32,64,0.04);
+}
+.step-content { color:#2b4a61; font-size:0.95rem; }
+
+/* bottom grid */
+.bottom-grid { display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin-top: 18px; }
+.small-box { background:#fbfdff; padding:12px; border-radius:10px; border:1px solid #eef6ff; }
+.small-box h5 { margin:0 0 8px 0; color:#0f3b5d; font-size:0.95rem; }
+.small-box ul { margin:0; padding-left:18px; color:#3b5566; }
+
+/* Adjust for small screens inside the panel */
+@media (max-width: 960px) {
+  .expected { display:none; }
+  .detail-header { flex-direction: column; align-items:flex-start; gap:8px; }
+  .bottom-grid { grid-template-columns: 1fr; }
+}

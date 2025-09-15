@@ -1,0 +1,30 @@
+.inspection-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fbff, #eef3ff);
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.inspection-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.inspection-header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #142c46;
+}
+.subtitle {
+  margin-top: 6px;
+  color: #546b82;
+  font-size: 1rem;
+}
+
+.inspection-main {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 22px 28px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(20, 44, 70, 0.08);
+}
