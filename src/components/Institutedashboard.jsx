@@ -1,20 +1,11 @@
 import React, { useEffect } from "react";
-import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/Sih-logo.png"; 
 import "./Institutedashboard.css";
 
 const InstituteDashboard = () => {
   useEffect(() => {
-    toast.error("🌩️ Major Thunderstorm alert and 🌍 Earthquake Emergency Issued for your area. Stay Safe!", {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      theme: "colored"
-    });
+    alert("Major Thunderstorm alert and Earthquake Emergency Issued for your area. Be prepared, Be safe.");
   }, []);
 
   const navigate = useNavigate();
